@@ -1,0 +1,29 @@
+<p-toast [style]="{marginTop: '20px'}"></p-toast>
+
+<div class="p-col-12 custom-login" >
+  <div class="p-col-4 p-offset-4" style="margin-top: 200px">
+    <div class="box custom-bgcolor">
+      <div class="ui-inputgroup" style="display: inline-flex">
+        <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+        <input type="text" pInputText placeholder="Username" [(ngModel)]="username">
+      </div>
+    </div>
+  </div>
+  <div class="p-col-4 p-offset-4">
+    <div class="box custom-bgcolor">
+      <div class="ui-inputgroup" style="display: inline-flex">
+        <span class="ui-inputgroup-addon"><i class="fa fa-file-powerpoint-o"></i></span>
+        <input type="password" pInputText (keyup.enter)="login()" placeholder="Password" [(ngModel)]="password">
+      </div>
+    </div>
+  </div>
+  <div class="p-col-4 p-offset-4">
+    <div class="box custom-bgcolor">
+      <p-button (click)="login()" label="登录"></p-button>
+    </div>
+    <div style="float: right">
+      <a routerLink='/user/fgpassword'>忘记密码</a>
+    </div>
+  </div>
+
+</div>

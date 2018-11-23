@@ -1,0 +1,35 @@
+<div class="p-grid sample-layout coustom-home" style="">
+
+  <div class="p-col-12 p-md-9  p-col-nogutter">
+    <div class="p-col-12">
+      <div class="p-grid">
+        <div class="p-col-3">
+          <p-galleria [images]="images" (onImageClicked)="clickImage($event)" (onImageChange)="imageChanged($event)" panelWidth="auto" panelHeight="313" showCaption="true"></p-galleria>
+
+        </div>
+        <div class="p-col-9">
+          <app-history [title]="oTitle" [content]="oContent"></app-history>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-col-12 p-md-3">
+    <div class="p-col-12">
+      排行榜
+    </div>
+    <div class="p-sm-12">
+      <div class="p-grid">
+        <div class="p-sm-6">
+          name
+        </div>
+        <div class="p-sm-6">
+          top
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-col-12">
+
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="custom-label-parent">
+  <div class="custom-label-child "><i class="fa fa-leaf" aria-hidden="true"></i> <a routerLink="/history">&nbsp;FreeBook</a></div>
+  <p-menubar [model]="items">
+    <span *ngIf="isLogin">
+          <p-button label="退出" (click)="logout()" icon="fa fa-sign-out" style="margin-right: 0.25em;"></p-button>
+    </span>
+    <span *ngIf="!isLogin">
+      <p-button label="注册" icon="fa fa-sign-in" (click)="toRegister()" style="margin-right: 0.25em;"></p-button>
+      <p-button label="登录" (click)="toLogin()" icon="fa fa-sign-in" style="margin-right: 0.25em;"></p-button>
+    </span>
+
+
+  </p-menubar>
+</div>

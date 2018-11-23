@@ -1,1 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0px;
+  min-height: 100%;
+  padding: 0px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "Open Sans","Helvetica Neue",sans-serif;
+  font-weight: 400;
+  color: #333c40;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  background-color: burlywood;
+}
+
+.box,
+.sample-layout > div {
+  background-color: #cce4f7;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-radius: 4px;
+}
+
+.box-stretched {
+  height: 100%;
+}
+
+.sample-layout {
+  margin: 0;
+}
+
+.sample-layout > div {
+  border: 1px solid #ffffff;
+}
+
+.vertical-container {
+  margin: 0;
+  height: 200px;
+  background: #efefef;
+  border-radius: 4px;
+}
+
+.nested-grid .p-col-4 {
+  padding-bottom: 1em;
+}
+.custom-bottom {
+  z-index: 1000;
+  margin: auto;
+  position: absolute;
+  left: 42%;
+  bottom: 5px;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+.box, .sample-layout > div {
+  background-color: burlywood;
+}
+body .ui-menubar {
+  background-color: burlywood !important;
+}
+body .ui-panel .ui-panel-titlebar {
+  border: 0px !important;
+  background-color: darkgoldenrod !important;
+  text-align: left !important;
+}
+body .ui-panel .ui-panel-content {
+  border: 0px !important;
+  background-color: blanchedalmond !important;
+  height: 350px !important;
+}

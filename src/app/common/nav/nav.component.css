@@ -1,0 +1,17 @@
+.custom-label-parent {
+  display: inline-block;
+  width: 100%;
+}
+.custom-label-child {
+  width:160px;
+  background-color: burlywood;
+  font-family: cursive;
+  font-size: 20px;
+  padding: 10px;
+  color: rebeccapurple;
+  float: left
+}
+.custom-label-child > a {
+  color: darkgreen;
+  font-weight: bold;
+}
