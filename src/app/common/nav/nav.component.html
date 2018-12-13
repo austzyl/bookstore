@@ -1,12 +1,12 @@
 <div class="custom-label-parent">
-  <div class="custom-label-child "><i class="fa fa-leaf" aria-hidden="true"></i> <a routerLink="/history">&nbsp;FreeBook</a></div>
+  <div class="custom-label-child "><i class="fa fa-leaf" aria-hidden="true"></i> <a routerLink="/history">&nbsp;BkOnline</a></div>
   <p-menubar [model]="items">
     <span *ngIf="isLogin">
-          <p-button label="退出" (click)="logout()" icon="fa fa-sign-out" style="margin-right: 0.25em;"></p-button>
+      <button label="退出" pButton type="button" class="custom-button"  (click)="logout()" icon="fa fa-sign-out" ></button>
     </span>
     <span *ngIf="!isLogin">
-      <p-button label="注册" icon="fa fa-sign-in" (click)="toRegister()" style="margin-right: 0.25em;"></p-button>
-      <p-button label="登录" (click)="toLogin()" icon="fa fa-sign-in" style="margin-right: 0.25em;"></p-button>
+      <button pButton  label="注册" type="button" class="custom-button" icon="fa fa-sign-in" (click)="toRegister()"></button>
+      <button pButton label="登录" type="button" class="custom-button" (click)="toLogin()" icon="fa fa-sign-in" ></button>
     </span>
 
 

@@ -45,13 +45,8 @@ body {
   padding-bottom: 1em;
 }
 .custom-bottom {
-  z-index: 1000;
-  margin: auto;
-  position: absolute;
-  left: 42%;
-  bottom: 5px;
-  margin-left: -50px;
-  margin-top: -50px;
+  margin-bottom: 5px;
+  text-align: center;
 }
 .box, .sample-layout > div {
   background-color: burlywood;
@@ -68,4 +63,10 @@ body .ui-panel .ui-panel-content {
   border: 0px !important;
   background-color: blanchedalmond !important;
   height: 350px !important;
+}
+.custom_inline_block {
+  display: inline-block;
+}
+.custom_margin_0 {
+  margin: 0px !important;
 }

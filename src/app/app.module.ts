@@ -32,7 +32,6 @@ import {HttpClientModule} from "@angular/common/http";
     HomeComponent,
     NotFoundComponent,
     HistoryComponent,
-    CategoryComponent,
   ],
   imports: [
     BrowserModule,

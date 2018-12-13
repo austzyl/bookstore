@@ -41,9 +41,8 @@ export class HomeComponent implements OnInit {
   clickImage(event) {
     console.log("event:",event);
   }
-  imageChanged(e,index) {
+  imageChanged(e) {
     console.log("e:",e);
-    console.log("index:",index);
     this.oTitle = e.index + 1;
   }
 }

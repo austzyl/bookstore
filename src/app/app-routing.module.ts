@@ -20,6 +20,10 @@ import {AuthenticatedGuard} from "./authenticated.guard";
             path:'user',
             loadChildren:'./component/user/user.module#UserModule'
           },
+          {
+            path:'category',
+            loadChildren:'./component/category/category.module#CategoryModule'
+          },
           {path: '**',component: HomeComponent}
         ])
     ],

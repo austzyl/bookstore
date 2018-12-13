@@ -15,3 +15,9 @@
   color: darkgreen;
   font-weight: bold;
 }
+.custom-button {
+  background-color: burlywood;
+  margin-right: 0.25em;
+  border: 1px solid burlywood;
+}
+

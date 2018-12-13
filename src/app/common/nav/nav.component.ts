@@ -40,39 +40,22 @@ export class NavComponent implements OnInit {
   ngOnInit() {
     this.items =  [
       {
-        label: '文学',
+        label: '首页',
         icon: 'pi pi-fw pi-file',
-        items: [{
-          label: '外国文学',
-          icon: 'pi pi-fw pi-plus',
-          items: [
-            {label: '外国文学'},
-            {label: '中国文学'},
-          ]
-        },
-          {label: '中国文学'},
-          {separator:true},
-          {
-            label: '古典文学',
-            routerLink: 'notfound'
-          }
-        ]
+        routerLink:['/']
       },
       {
-        label: '诗词曲赋',
+        label: '分类',
         icon: 'pi pi-fw pi-pencil',
-        items: [
-          {label: '古典', icon: 'pi pi-fw pi-trash'},
-          {label: '现代', icon: 'pi pi-fw pi-refresh'}
-        ]
+        routerLink:['/category/category']
       },
       {
-        label: '历史军事',
+        label: '榜单',
         icon: 'pi pi-fw pi-question',
         items: []
       },
       {
-        label: '名人传记',
+        label: '我的书架',
         icon: 'pi pi-fw pi-cog',
         items: [
           {
