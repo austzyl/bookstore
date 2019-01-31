@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {SessionStorageService} from "./common/services/session-storage.service";
 import {NavigationEnd, NavigationStart, Router} from "@angular/router";
 import {  filter } from 'rxjs/operators';
-import {UserService} from "./component/user/services/userService";
+import {UserService} from "./components/user/services/userService";
 import {map} from "rxjs/internal/operators";
 import {HttpClient} from "@angular/common/http";
 

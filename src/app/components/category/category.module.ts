@@ -6,8 +6,10 @@ import {ButtonModule} from "primeng/button";
 import {RouterModule, Routes} from "@angular/router";
 
 import {CategoryComponent} from "./category.component";
-import {PaginatorModule, TieredMenuModule} from "primeng/primeng";
+import {PaginatorModule, SplitButtonModule, TieredMenuModule} from "primeng/primeng";
 import { BooklistComponent } from './booklist/booklist.component';
+import {PanelModule} from "primeng/panel";
+import { DragulaModule } from 'ng2-dragula';
 
 export const CGROUTES: Routes = [
   {
@@ -24,7 +26,10 @@ export const CGROUTES: Routes = [
     ButtonModule,
     TieredMenuModule,
     PaginatorModule,
-    RouterModule.forChild(CGROUTES)
+    PanelModule,
+    SplitButtonModule,
+    RouterModule.forChild(CGROUTES),
+    DragulaModule.forRoot()
   ],
   exports: [],
   declarations: [

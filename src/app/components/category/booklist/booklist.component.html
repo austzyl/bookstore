@@ -1,0 +1,24 @@
+<div style="background-color: #e0d7d1">
+  <div class="p-col-12" style="background-color: goldenrod">
+    1
+  </div>
+    <div class="p-grid">
+      <div class="p-col-12">
+        <div class="p-grid" dragula="DRAGULA_FACTS" [(dragulaModel)]="items">
+          <div class="p-col-3" *ngFor="let item of items" (click)="toDetail(item)">
+            <div>
+              <div class="p-col-12">
+                <img src="assets/showcase/images/demo/galleria/galleria1.jpg" alt="1" width="100%" height="250px">
+              </div>
+              <div class="p-col-12" >
+                {{item.bookname}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="p-col-12">
+        <p-paginator [rows]="10" [totalRecords]="120" [rowsPerPageOptions]="[10,20,30]"></p-paginator>
+      </div>
+</div>

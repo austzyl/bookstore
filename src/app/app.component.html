@@ -1,8 +1,8 @@
-<div style="width: 1200px;margin: 0 auto">
+<div style="width:80%;margin: 0 auto ;height: 100%;position: absolute;left: 10%;">
   <div *ngIf="isLogin">
     <app-nav (logoutEvent)="forLogout($event)"></app-nav>
   </div>
-  <div>
+  <div >
   <router-outlet></router-outlet>
   </div>
   <div class="custom-bottom">

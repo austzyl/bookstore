@@ -9,6 +9,7 @@ import {ButtonModule} from "primeng/button";
 import {RouterModule, Routes} from "@angular/router";
 import { FgpasswordComponent } from './fgpassword/fgpassword.component';
 import {UserComponent} from "./user.component";
+import { DragulaModule } from 'ng2-dragula';
 
 export const ROUTES: Routes = [
   {
@@ -32,7 +33,8 @@ export const ROUTES: Routes = [
     FormsModule,
     ToastModule,
     ButtonModule,
-    RouterModule.forChild(ROUTES)
+    RouterModule.forChild(ROUTES),
+    DragulaModule.forRoot()
   ],
   exports: [],
   declarations: [
